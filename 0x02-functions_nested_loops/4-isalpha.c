@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpha - Ascertain if input is 
+ * _isalpha - Ascertain if input is
  * an alphabet
  * @a: integer argument
  *
@@ -9,7 +9,7 @@
  */
 int _isalpha(int a)
 {
-	if ((a >96 && a < 123) || (a > 64 && a < 91))
+	if ((a > 96 && a < 123) || (a > 64 && a < 91))
 		return (1);
 	else
 		return (0);
