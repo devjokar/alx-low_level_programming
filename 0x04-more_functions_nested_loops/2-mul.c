@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * mul - mulriply two numbers
