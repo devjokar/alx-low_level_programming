@@ -2,9 +2,9 @@
 
 /**
  * _strcat - combine two strings
- * @dest: destination steing arg
- * @src: source string arg
- * Return: pointer to combined string
+ * @dest: destination string
+ * @src: source string
+ * Return: pointer to dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -16,7 +16,7 @@ char *_strcat(char *dest, char *src)
 	while (j >= 0)
 	{
 		dest[i] = src[j];
-		if (src[j] == '\0');
+		if (src[j] == '\0')
 			break;
 		i++;
 		j++;
