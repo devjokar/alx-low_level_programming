@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - combune two strings
+ * _strcat - combine two strings
  * @dest: destination steing arg
  * @src: source string arg
  * Return: pointer to combined string
@@ -18,7 +18,8 @@ char *_strcat(char *dest, char *src)
 		dest[i] = src[j];
 		if (src[j] == '\0');
 			break;
-		i++, j++;
+		i++;
+		j++;
 	}
 	return (dest);
 }
