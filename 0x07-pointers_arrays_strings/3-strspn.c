@@ -10,10 +10,9 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, j, n;
 
-	i = 0;
+	i = j = 0;
 	while (s[i] != '\0')
 	{
-		j = 0;
 		n = 1;
 		while (accept[j] != '\0')
 		{
@@ -24,10 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 			}
 			j++;
 		}
+		if (n == 1)
+			break;
 		i++;
 	}
-	if (n == 1)
-		break;
 	return (i);
 }
 
