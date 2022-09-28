@@ -4,7 +4,7 @@
  * print_chessboard - displays chessboard
  * @a: chess matrix
  */
-void print_chessboard(int (*a)[8])
+void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
