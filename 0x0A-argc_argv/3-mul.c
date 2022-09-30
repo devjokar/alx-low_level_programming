@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - Entry point
@@ -9,7 +8,19 @@
  * Return: always 0
  */
 int main(int argc, char *argv[])
-}
+{
+	int prod;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		prod = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", prod);
+	}
 	return (0);
 }
 
